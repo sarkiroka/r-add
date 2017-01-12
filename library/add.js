@@ -3,7 +3,7 @@
  * @author sarkiroka on 2017.07.01.
  */
 var stringify = require('./stringify');
-var addTable = require('./add-table.json');
+var addDigits = require('./add-digts');
 module.exports = function add(numberA, numberB, callback) {
 	var result, carry, a, b, numbers, startNumber;
 	var startDate = Date.now();
@@ -61,19 +61,3 @@ module.exports = function add(numberA, numberB, callback) {
 	}
 	callback(null, result);
 };
-function addDigits(a, b, carry) {
-	var retValue = addTable[a + b];
-	if (!retValue) {
-		retValue = addTable[b + a];
-	}
-	if (!retValue) {
-		return null;
-	}
-	if (carry) {
-		var previousCarry = retValue.carry;
-		retValue = addDigits('1', retValue.result, false);
-		retValue.carry |= previousCarry;
-	}
-	return retValue;
-
-}
