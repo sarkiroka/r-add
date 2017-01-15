@@ -2,8 +2,8 @@
  *
  * @author sarkiroka on 2017.07.01.
  */
-var stringify = require('./stringify');
 var addDigits = require('./add-digts');
+var stringify = require('./stringify');
 module.exports = function add(numberA, numberB, callback) {
 	var result, carry, a, b, numbers, startNumber;
 	var startDate = Date.now();
