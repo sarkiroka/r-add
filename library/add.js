@@ -1,5 +1,5 @@
 /**
- *
+ * add two numbers
  * @author sarkiroka on 2017.07.01.
  */
 var addDigits = require('./add-digts');
