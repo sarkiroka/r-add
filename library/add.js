@@ -3,6 +3,7 @@
  * @author sarkiroka on 2017.07.01.
  */
 var addDigits = require('./add-digts');
+var pad = require('./pad');
 var stringify = require('./stringify');
 module.exports = function add(numberA, numberB, callback) {
 	var result, carry, a, b, numbers, startNumber;
