@@ -20,12 +20,8 @@ module.exports = function add(numberA, numberB, callback) {
 		a = stringify(numberA);
 		b = stringify(numberB);
 		numbers = Math.max(a.length, b.length);
-		while (a.length < numbers) {
-			a = '0' + a;
-		}
-		while (b.length < numbers) {
-			b = '0' + b;
-		}
+		a=pad(a,numbers);
+		b=pad(b,numbers);
 		result = '';
 		carry = false;
 		startNumber = 0;
