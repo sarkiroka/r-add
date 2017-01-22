@@ -9,12 +9,13 @@ module.exports = function addDigits(a, b, carry) {
 		retValue = addTable[b + a];
 	}
 	if (!retValue) {
-		return null;
-	}
-	if (carry) {
-		var previousCarry = retValue.carry;
-		retValue = addDigits('1', retValue.result, false);
-		retValue.carry |= previousCarry;
+		retValue = null;
+	} else {
+		if (carry) {
+			var previousCarry = retValue.carry;
+			retValue = addDigits('1', retValue.result, false);
+			retValue.carry |= previousCarry;
+		}
 	}
 	return retValue;
 };
