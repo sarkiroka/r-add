@@ -9,7 +9,11 @@ module.exports = function addDigits(a, b, carry) {
 		retValue = addTable[b + a];
 	}
 	if (!retValue) {
-		retValue = null;
+		if(a=='.' && b=='.'){
+			retValue={result:'.',carry:carry};
+		}else {
+			retValue = null;
+		}
 	} else {
 		if (carry) {
 			var previousCarry = retValue.carry;
