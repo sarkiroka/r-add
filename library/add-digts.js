@@ -9,9 +9,9 @@ module.exports = function addDigits(a, b, carry) {
 		retValue = addTable[b + a];
 	}
 	if (!retValue) {
-		if(a=='.' && b=='.'){
-			retValue={result:'.',carry:carry};
-		}else {
+		if (a == '.' && b == '.') {
+			retValue = {result: '.', carry: carry};
+		} else {
 			retValue = null;
 		}
 	} else {
