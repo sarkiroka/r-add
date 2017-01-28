@@ -6,6 +6,7 @@ var add = require('.');// you should require by name: var add=require('r-add');
 
 add(1, 1, printResult);
 add('1', '1', printResult);
+add('0.1', '0.2', printResult);
 
 function printResult(err, result) {
 	if (err) {
