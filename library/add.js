@@ -5,6 +5,7 @@
 var addDigits = require('./add-digts');
 var pad = require('./pad');
 var stringify = require('./stringify');
+var trimFractions = require('./trim-fractions');
 module.exports = function add(numberA, numberB, callback) {
 	var result, carry, a, b, numbers, startNumber;
 	var startDate = Date.now();
