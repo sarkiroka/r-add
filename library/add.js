@@ -57,5 +57,6 @@ module.exports = function add(numberA, numberB, callback) {
 	if (carry) {
 		result = '1' + result;
 	}
+	result = trimFractions(result);
 	callback(null, result);
 };
