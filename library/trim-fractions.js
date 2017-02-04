@@ -4,8 +4,10 @@
  */
 module.exports = function (number) {
 	var retValue=number;
-	if(number.indexOf('.')>-1){
-
+	if(retValue.indexOf('.')>-1){
+		while(retValue[retValue.length-1]=='0'){
+			retValue=retValue.substr(0,retValue.length-1);
+		}
 	}
 	return retValue;
 };
