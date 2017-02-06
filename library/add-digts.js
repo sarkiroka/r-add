@@ -18,7 +18,7 @@ module.exports = function addDigits(a, b, carry) {
 		if (carry) {
 			var previousCarry = retValue.carry;
 			retValue = addDigits('1', retValue.result, false);
-			retValue.carry |= previousCarry;
+			retValue.carry = previousCarry;
 		}
 	}
 	return retValue;
