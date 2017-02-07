@@ -22,5 +22,12 @@ describe('medium integers', function () {
 				done();
 			});
 		});
+		it('works with different length of strings', function (done) {
+			add('999', '9999', function (err, result) {
+				expect(err).toEqual(null, 'medium integers are valid');
+				expect(result).toEqual('10998', '999+9999 should be "10998"');
+				done();
+			});
+		});
 	});
 });
