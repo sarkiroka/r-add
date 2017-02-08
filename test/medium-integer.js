@@ -15,7 +15,14 @@ describe('medium integers', function () {
 				done();
 			});
 		});
-		it('works with carry', function (done) {
+		it('works with carry I.', function (done) {
+			add('55', '55', function (err, result) {
+				expect(err).toEqual(null, 'medium integers are valid');
+				expect(result).toEqual('110', '55+55 should be "110"');
+				done();
+			});
+		});
+		it('works with carry II.', function (done) {
 			add('5099', '5099', function (err, result) {
 				expect(err).toEqual(null, 'medium integers are valid');
 				expect(result).toEqual('10198', '5099+5099 should be "10198"');
