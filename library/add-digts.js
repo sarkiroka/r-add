@@ -3,23 +3,18 @@
  * @author sarkiroka on 2017.07.02.
  */
 var addTable = require('./add-table.json');
-module.exports = function addDigits(a, b, carry) {
-	var retValue = addTable[a + b];
-	if (!retValue) {
-		retValue = addTable[b + a];
-	}
-	if (!retValue) {
-		if (a == '.' && b == '.') {
-			retValue = {result: '.', carry: carry};
-		} else {
-			retValue = null;
-		}
-	} else {
-		if (carry) {
-			var previousCarry = retValue.carry;
-			retValue = addDigits('1', retValue.result, false);
-			retValue.carry = previousCarry;
-		}
+module.exports = function addDigits(a, b, previousCarry) {
+	if(a=='.' && b=='.'){
+		retValue={
+			result:'.',
+			carry:previousCarry
+		};
+	}else {
+		var result=1*a+1*b+(previousCarry?1:0);
+		retValue = {
+			result: '' + (result % 10),
+			carry: result > 9
+		};
 	}
 	return retValue;
 };
