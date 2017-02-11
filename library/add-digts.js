@@ -4,7 +4,7 @@
  */
 var addTable = require('./add-table.json');
 module.exports = function addDigits(a, b, previousCarry) {
-	var retValue
+	var retValue;
 	if (a == '.' && b == '.') {
 		retValue = {
 			result: '.',
