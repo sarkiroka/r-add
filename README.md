@@ -4,11 +4,11 @@ Just because javascript can't calculate with large or float number, a cross-brow
 ## Usage
 ```javascript
 var add = require('r-add');
-var a=0.1;
-var b=0.2;
+var a = 0.1;
+var b = 0.2;
 
 // the bad solution
-console.log(a+b); // prints 0.30000000000000004
+console.log(a + b); // prints 0.30000000000000004
 
 // the good solution
 add(a,b, function(err, result){
