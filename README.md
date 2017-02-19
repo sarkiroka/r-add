@@ -20,3 +20,7 @@ add(a, b, function (err, result){
 	console.log(result); // prints 0.3
 });
 ```
+
+## Why
+
+Because IEEE 754
