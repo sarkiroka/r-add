@@ -23,4 +23,4 @@ add(a, b, function (err, result){
 
 ## Why
 
-Because IEEE 754
+Because the javascript uses IEEE 754 standard and it has only 64 bit for numbers.
