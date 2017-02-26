@@ -32,3 +32,6 @@ var a = 9007199254740991 + 1;
 var b = 9007199254740991 + 2;
 console.log(a == b); // prints true
 ```
+
+
+Of course the type of this numbers are number but for maniacs the example works with type safe relation operator too.
