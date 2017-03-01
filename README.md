@@ -41,3 +41,5 @@ var a = 9007199254740991 + 1;
 var b = 9007199254740991 + 2;
 console.log(a === b); // prints true
 ```
+
+And the maximum value of a number in javascript is only 1.7976931348623157e+308
