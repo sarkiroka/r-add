@@ -45,3 +45,7 @@ console.log(a === b); // prints true
 And the maximum value of a number in javascript is only 1.7976931348623157e+308
 
 It is unsuitable for precise scientific calculations.
+
+## Why string
+
+TODO
