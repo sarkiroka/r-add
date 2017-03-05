@@ -48,4 +48,4 @@ It is unsuitable for precise scientific calculations.
 
 ## Why string
 
-TODO
+See above :)
