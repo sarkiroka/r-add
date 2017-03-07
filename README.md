@@ -49,3 +49,5 @@ It is unsuitable for precise scientific calculations.
 ## Why string
 
 See above :)
+
+The numbers cannot store the precise value of large or extreme accurate values. The strings can.
