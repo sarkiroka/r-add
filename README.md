@@ -17,7 +17,7 @@ console.log(a + b); // prints 0.30000000000000004
 
 // the good solution
 add(a, b, function (err, result){
-	console.log(result); // prints 0.3
+  console.log(result); // prints 0.3
 });
 ```
 
