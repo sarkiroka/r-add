@@ -23,7 +23,7 @@ add(a, b, function (err, result){
 
 ## Why?
 
-Because the javascript uses IEEE 754 standard and it has only 64 bit for numbers. From this 52 bit for value and 11 bit for exponent. This is the reason for max safe integer is 9007199254740991. This number is the maximum which javascript can calculate precisely.
+Because the javascript uses IEEE 754 standard and it has only 64 bit for numbers. From this 52 bit for value and 11 bit for exponent and 1 for sign. This is the reason for max safe integer is 9007199254740991. This number is the maximum which javascript can calculate precisely.
 
 For example:
 
