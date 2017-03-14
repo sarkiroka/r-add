@@ -29,6 +29,13 @@ describe('small fractions', function () {
 				done();
 			});
 		});
+		it('works with different length of numbers', function (done) {
+			add('0.5', '0.05', function (err, result) {
+				expect(err).toEqual(null, 'small fractions are valid');
+				expect(result).toEqual('0.55', '0.5+0.05 should be "0.55"');
+				done();
+			});
+		});
 
 	});
 });
