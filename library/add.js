@@ -3,7 +3,7 @@
  * @author sarkiroka on 2017.07.01.
  */
 var addDigits = require('./add-digts');
-var pad = require('./pad-equal');
+var padEqual = require('./pad-equal');
 var stringify = require('./stringify');
 var trimFractions = require('./trim-fractions');
 module.exports = function add(numberA, numberB, callback) {
@@ -21,8 +21,8 @@ module.exports = function add(numberA, numberB, callback) {
 		a = stringify(numberA);
 		b = stringify(numberB);
 		numbers = Math.max(a.length, b.length);
-		a = pad(a, numbers);
-		b = pad(b, numbers);
+		a = padEqual(a, numbers);
+		b = padEqual(b, numbers);
 		result = '';
 		carry = false;
 		startNumber = 0;
