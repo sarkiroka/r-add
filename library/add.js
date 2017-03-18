@@ -20,9 +20,10 @@ module.exports = function add(numberA, numberB, callback) {
 	} else {
 		a = stringify(numberA);
 		b = stringify(numberB);
-		numbers = Math.max(a.length, b.length);
-		a = padEqual(a, numbers);
-		b = padEqual(b, numbers);
+		var padResult = padEqual(a, b);
+		numbers = padResult.length;
+		a = padResult.a;
+		b = padResult.b;
 		result = '';
 		carry = false;
 		startNumber = 0;
