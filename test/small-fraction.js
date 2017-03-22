@@ -36,6 +36,13 @@ describe('small fractions', function () {
 				done();
 			});
 		});
+		it('works with integer and float', function (done) {
+			add('1', '0.05', function (err, result) {
+				expect(err).toEqual(null, 'small fractions are valid');
+				expect(result).toEqual('1.05', '1+0.05 should be "1.05"');
+				done();
+			});
+		});
 
 	});
 });
