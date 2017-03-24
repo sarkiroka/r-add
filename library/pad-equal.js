@@ -18,10 +18,12 @@ module.exports = function (a, b) {
 		};
 	} else if(dotPositionA>-1 && dotPositionB>-1){ // all float
 		numbers=Math.max(a.length, b.length);
+		resultA=padFloat(a,numbers);
+		resultB=padFloat(b,numbers);
 		retValue={
 			length:numbers,
-			a:a,
-			b:b
+			a:resultA,
+			b:resultB
 		}
 	}else{
 		if(dotPositionA==-1){
