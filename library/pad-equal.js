@@ -3,6 +3,7 @@
  * @author sarkiroka on 2017.01.13.
  */
 var padInteger=require('./pad-integer');
+var padFloat=require('./pad-float');
 module.exports = function (a, b) {
 	var dotPositionA = a.indexOf('.');
 	var dotPositionB = a.indexOf('.');
