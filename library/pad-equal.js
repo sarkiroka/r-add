@@ -30,7 +30,7 @@ module.exports = function (a, b) {
 		if(dotPositionA==-1){
 			a+='.0';
 		}
-		if(dotPositionB){
+		if(dotPositionB==-1){
 			b+='.0';
 		}
 		dotPositionA = a.indexOf('.');
