@@ -39,8 +39,8 @@ module.exports = function (a, b) {
 		resultA=padInteger(a,numbers);
 		resultB=padInteger(b,numbers);
 		numbers=Math.max(resultA.length,resultB.length);
-		resultA=padFloat(a,numbers);
-		resultB=padFloat(b,numbers);
+		resultA=padFloat(resultA,numbers);
+		resultB=padFloat(resultB,numbers);
 		retValue={
 			length:numbers,
 			a:resultA,
