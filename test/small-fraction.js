@@ -37,9 +37,9 @@ describe('small fractions', function () {
 			});
 		});
 		it('works with integer and float', function (done) {
-			add('1', '0.05', function (err, result) {
+			add('10', '0.05', function (err, result) {
 				expect(err).toEqual(null, 'small fractions are valid');
-				expect(result).toEqual('1.05', '1+0.05 should be "1.05"');
+				expect(result).toEqual('10.05', '10+0.05 should be "10.05"');
 				done();
 			});
 		});
