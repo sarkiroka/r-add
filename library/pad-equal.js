@@ -6,7 +6,7 @@ var padInteger=require('./pad-integer');
 var padFloat=require('./pad-float');
 module.exports = function (a, b) {
 	var dotPositionA = a.indexOf('.');
-	var dotPositionB = a.indexOf('.');
+	var dotPositionB = b.indexOf('.');
 	var numbers,resultA,resultB,retValue;
 	if(dotPositionA==-1 && dotPositionB==-1){ // all integer
 		numbers=Math.max(a.length, b.length);
@@ -17,16 +17,7 @@ module.exports = function (a, b) {
 			a: resultA,
 			b: resultB
 		};
-	} else if(dotPositionA>-1 && dotPositionB>-1){ // all float
-		numbers=Math.max(a.length, b.length);
-		resultA=padFloat(a,numbers);
-		resultB=padFloat(b,numbers);
-		retValue={
-			length:numbers,
-			a:resultA,
-			b:resultB
-		}
-	}else{
+	}else{ // contain float
 		if(dotPositionA==-1){
 			a+='.0';
 		}
@@ -34,7 +25,7 @@ module.exports = function (a, b) {
 			b+='.0';
 		}
 		dotPositionA = a.indexOf('.');
-		dotPositionB = a.indexOf('.');
+		dotPositionB = b.indexOf('.');
 		numbers=Math.max(dotPositionA,dotPositionB);
 		resultA=padInteger(a,numbers);
 		resultB=padInteger(b,numbers);
@@ -45,7 +36,7 @@ module.exports = function (a, b) {
 			length:numbers,
 			a:resultA,
 			b:resultB
-		}
+		};
 	}
 	return retValue;
 };
