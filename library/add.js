@@ -3,9 +3,9 @@
  * @author sarkiroka on 2017.07.01.
  */
 var addDigits = require('./add-digts');
+var normalizeResult = require('./normalize-result');
 var padEqual = require('./pad-equal');
 var stringify = require('./stringify');
-var trimFractions = require('./trim-fractions');
 module.exports = function add(numberA, numberB, callback) {
 	var result, carry, a, b, numbers, startNumber;
 	var startDate = Date.now();
@@ -58,6 +58,6 @@ module.exports = function add(numberA, numberB, callback) {
 	if (carry) {
 		result = '1' + result;
 	}
-	result = trimFractions(result);
+	result = normalizeResult(result);
 	callback(null, result);
 };
