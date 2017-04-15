@@ -4,6 +4,6 @@
  */
 var leadingZeroRegex = /^0+([^.])/;
 module.exports = function (number) {
-	var retValue = nember.replace(leadingZeroRegex, '$1');
+	var retValue = number.replace(leadingZeroRegex, '$1');
 	return retValue;
 };
