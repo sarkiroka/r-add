@@ -1,7 +1,7 @@
 {
   "name": "r-add",
-  "version": "0.0.1",
-  "description": "Just becouse javascript can't calculate with large or float number, a cross-browser, numerically stable way to add numbers in javascript.",
+  "version": "1.0.0",
+  "description": "Just because javascript can't calculate with large or extreme precise float numbers. A cross-browser, numerically stable way to add numbers in javascript.",
   "main": "index.js",
   "scripts": {
     "test": "mocha test --require expectations"
