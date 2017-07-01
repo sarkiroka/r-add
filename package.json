@@ -1,0 +1,33 @@
+{
+  "name": "r-add",
+  "version": "0.0.1",
+  "description": "Just becouse javascript can't calculate with large or float number, a cross-browser, numerically stable way to add numbers in javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --require expectations"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarkiroka/r-add.git"
+  },
+  "keywords": [
+    "add",
+    "numbers",
+    "float",
+    "integer",
+    "long",
+    "double",
+    "single",
+    "short"
+  ],
+  "author": "sarkiroka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarkiroka/r-add/issues"
+  },
+  "homepage": "https://github.com/sarkiroka/r-add#readme",
+  "devDependencies": {
+    "expectations": "^0.7.1",
+    "mocha": "^3.4.2"
+  }
+}
